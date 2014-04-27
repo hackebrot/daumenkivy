@@ -1,0 +1,3 @@
+title=Daumenkivy
+author=Raphael Pierzina
+orientation=landscape
