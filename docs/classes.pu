@@ -1,0 +1,22 @@
+@startuml
+!include colors.pu
+
+class DaumenkivyApp {
+
+}
+
+class FlipBook {
+
+}
+
+class Frame {
+
+}
+
+class FileHandler {
+
+}
+
+note "Overview DaumenkivyApp" as N1
+
+@enduml
