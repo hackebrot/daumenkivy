@@ -1,13 +1,19 @@
 @startuml
 !include colors.pu
 
+class kivy.app.App
+
 class DaumenkivyApp {
 
 }
 
+class kivy.uix.carousel.Carousel
+
 class FlipBook {
 
 }
+
+class kivy.uix.floatlayout.FloatLayout
 
 class Frame {
 
@@ -18,5 +24,9 @@ class FileHandler {
 }
 
 note "Overview DaumenkivyApp" as N1
+
+kivy.app.App <|-- DaumenkivyApp
+kivy.uix.carousel.Carousel <|-- FlipBook
+kivy.uix.floatlayout.FloatLayout <|-- Frame
 
 @enduml
