@@ -2,25 +2,24 @@
 !include colors.pu
 
 class kivy.app.App
+class kivy.uix.carousel.Carousel
+class kivy.uix.floatlayout.FloatLayout
 
 class DaumenkivyApp {
 
 }
 
-class kivy.uix.carousel.Carousel
-
 class FlipBook {
-
+  + name : str
 }
-
-class kivy.uix.floatlayout.FloatLayout
 
 class Frame {
 
 }
 
 class FileHandler {
-
+    + save_flip_book( fp : FlipBook )
+    + load_flip_book( fp : FlipBook )
 }
 
 note "Overview DaumenkivyApp" as N1
@@ -29,4 +28,7 @@ kivy.app.App <|-- DaumenkivyApp
 kivy.uix.carousel.Carousel <|-- FlipBook
 kivy.uix.floatlayout.FloatLayout <|-- Frame
 
+DaumenkivyApp - "1" FileHandler : uses >
+DaumenkivyApp - "0..*" FlipBook : + flip_books >
+FlipBook - "0..*" Frame : + frames >
 @enduml
