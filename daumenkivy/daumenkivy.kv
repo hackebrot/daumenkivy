@@ -1,4 +1,10 @@
 #:kivy 1.8.0
+#:import FlipBook daumenkivy.flipbook
 
-Button:
-    text: 'Hello World'
+FlipBook:
+    name: "FlipBook"
+    Label:
+        text: " ".join((root.name, "slide01"))
+    Label:
+        text: " ".join((root.name, "slide02"))
+
