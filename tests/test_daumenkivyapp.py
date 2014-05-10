@@ -1,22 +1,18 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
 
-import unittest
-
 from daumenkivy.daumenkivyapp import DaumenkivyApp
 
 
-class TestDaumenkivyApp(unittest.TestCase):
+class TestApp(object):
     """TestCase for DaumenkivyApp.
     """
-    def setUp(self):
+    def setup(self):
         self.app = DaumenkivyApp()
 
     def test_name(self):
-        self.assertEqual(self.app.name, 'daumenkivy')
+        assert self.app.name == 'daumenkivy'
 
-    def tearDown(self):
+    def teardown(self):
         pass
 
-if __name__ == '__main__':
-    unittest.main()
