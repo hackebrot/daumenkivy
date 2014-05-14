@@ -1,22 +1,27 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
 
+import pytest
+
 from daumenkivy.daumenkivyapp import DaumenkivyApp
 
 
-class TestApp(object):
+@pytest.fixture(scope="class")
+def daumenkivy_app():
+    return DaumenkivyApp()
+
+
+class TestDaumenkivyApp(object):
     """TestCase for DaumenkivyApp.
     """
-    def setup(self):
-        self.app = DaumenkivyApp()
+    def test_name(self, daumenkivy_app):
+        assert daumenkivy_app.name == 'daumenkivy'
 
-    def test_name(self):
-        assert self.app.name == 'daumenkivy'
 
-    def test_no_flip_books(self):
+class TestFlipBooks(object):
+    """TestCase for DaumenkivyApps flip_books functionality.
+    """
+    def test_no_flip_books(self, daumenkivy_app):
         err_msg = "flip_books is expected to be empty at first"
-        assert not self.app.flip_books, err_msg
-
-    def teardown(self):
-        pass
+        assert not daumenkivy_app.flip_books, err_msg
 
