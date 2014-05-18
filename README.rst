@@ -17,7 +17,7 @@ Usage
 Launching the app
 ~~~~~~~~~~~~~~~~~
 
-Kivy is compatible with Python2 as well as Python3::
+Daumenkivy is using kivy on python3.4::
 
     cd daumenkivy 
     python main.py
@@ -25,15 +25,15 @@ Kivy is compatible with Python2 as well as Python3::
 Running the testsuite
 ~~~~~~~~~~~~~~~~~~~~~
 
-Run its testsuite either with Python3::
+Run the testsuite either with Python3::
 
     cd daumenkivy 
     python -m unittest discover
 
-Or with nose::
+Or with py.test::
 
     cd daumenkivy 
-    nosetests
+    py.test
 
 Deploying to Android
 ~~~~~~~~~~~~~~~~~~~~
