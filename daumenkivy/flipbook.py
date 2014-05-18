@@ -9,3 +9,7 @@ class FlipBook(Carousel):
     """Carousel representing the timeline of the animation.
     """
     name = StringProperty()
+
+    def __init__(self, name):
+        super(FlipBook, self).__init__()
+        self.name = name

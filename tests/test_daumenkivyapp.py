@@ -25,3 +25,9 @@ class TestFlipBooks(object):
         err_msg = "flip_books is expected to be empty at first"
         assert not daumenkivy_app.flip_books, err_msg
 
+    def test_create_flip_book(self, daumenkivy_app):
+        daumenkivy_app.create_flip_book("FlipBook01")
+
+        err_msg = "flip_books is expected to contain a FlipBook"
+        assert daumenkivy_app.flip_books, err_msg
+
