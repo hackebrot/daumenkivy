@@ -17,7 +17,7 @@ Usage
 Launching the app
 ~~~~~~~~~~~~~~~~~
 
-Daumenkivy is using kivy on python3.4::
+Daumenkivy is using Kivy on Python 3::
 
     cd daumenkivy 
     python main.py
@@ -25,12 +25,7 @@ Daumenkivy is using kivy on python3.4::
 Running the testsuite
 ~~~~~~~~~~~~~~~~~~~~~
 
-Run the testsuite either with Python3::
-
-    cd daumenkivy 
-    python -m unittest discover
-
-Or with py.test::
+Run the testsuite with py.test::
 
     cd daumenkivy 
     py.test
