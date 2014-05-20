@@ -10,6 +10,6 @@ class FlipBook(Carousel):
     """
     name = StringProperty()
 
-    def __init__(self, name):
+    def __init__(self, name="FlipBook"):
         super(FlipBook, self).__init__()
         self.name = name
