@@ -4,12 +4,7 @@ Daumenkivy
 
 Flip-book like app for creating 2D animations with the kivy framework.
 
-* GPL v2
-
-Features
---------
-
-* TODO
+🚧 **This project hasn't been updated over the past several years and is not actively maintained.** 🚧
 
 Usage
 -----
